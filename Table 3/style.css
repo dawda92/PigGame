@@ -1,0 +1,50 @@
+/* Spinner One  */ 
+.spinner-1:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 60px;
+  width: 60px;
+  margin-top: -30px;
+  margin-left: -30px;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+  border-top-color: coral;
+  animation: spinner-1 0.7s linear infinite;
+}
+
+@keyframes spinner-1 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Spinner Two */ 
+  .spinner-2:before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 60px;
+    width: 60px;
+    margin-top: -30px;
+    margin-left: -30px;
+    border-bottom: 2px solid lightgray;
+    border-bottom-color: coral;
+    animation: spinner-2 1.5s linear infinite;
+  }
+  
+  @keyframes spinner-2 {
+    to {
+      transform: skew(180deg);
+    }
+  }
+
+.tdClick:hover {
+  background-color: rgb(52, 54, 56);
+  cursor: pointer;
+}
+
